@@ -1,16 +1,13 @@
 window.onload = function () {
-    let a = 120;
-    let x = 2000;
-    let b = 13;
-    let c = 100;
-    let d = 1.258;
+    let pirmaKaina = 120;
+    let antrakaina = 2000;
+    let pirmasProcentas = 13;
+    let antrasProcentas = 1.258;
 
-    console.log (prekiukaina(a,a,c,b))
-    console.log (prekiukaina(x,x,c,d))
+    console.log (prekiukaina(pirmaKaina,pirmasProcentas))
+    console.log (prekiukaina(antrakaina,antrasProcentas))
 }
 
-function prekiukaina (skaicius,skaicius2,skaiciusb,skaiciusc) {
-    skaicius = skaicius / skaiciusb * skaiciusc;
-    let prideti = skaicius + skaicius2;
-    return prideti
+function prekiukaina (kaina,procentai) {
+    return kaina / 100 * procentai + kaina;
 }
